@@ -1,0 +1,30 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: quickstart-cp4i
+  namespace: test-cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-BZFQU2
+    use: NonProduction
+  web:
+    enabled: true
+  version: 9.2.3.0-r1
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  queueManager:
+    resources:
+      limits:
+        cpu: 500m
+      requests:
+        cpu: 500m
+    name: QM2
+    storage:
+      queueManager:
+        type: ephemeral

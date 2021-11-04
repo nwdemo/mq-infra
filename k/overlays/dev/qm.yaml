@@ -1,0 +1,8 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: quickstart-cp4i
+  namespace: test-cp4i
+spec:
+  queueManager:
+    name: DQM2
