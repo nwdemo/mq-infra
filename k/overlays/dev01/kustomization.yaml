@@ -10,4 +10,4 @@ patches:
   patch: |-
     - op: add
       path: /spec/queueManager/image
-      value: ibm-mqadvanced-server-integration:9.2.3.0-r1
+      value: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.3.0-r1
