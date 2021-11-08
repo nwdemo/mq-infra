@@ -1,7 +1,5 @@
 bases:
-- ../../base
-patchesStrategicMerge:
-- qm.yaml
+- ../../../qmgrs/qm02
 
 patches:
 - target:
@@ -14,3 +12,5 @@ patches:
     - op: replace
       path: /metadata/name
       value: qmdev02
+
+

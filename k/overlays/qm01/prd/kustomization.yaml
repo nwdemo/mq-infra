@@ -1,7 +1,7 @@
 bases:
-- ../../base
+- ../../../qmgrs/qm01
 patchesStrategicMerge:
-- ./qm.yaml
+- qm.yaml
 
 patches:
 - target:
@@ -13,6 +13,4 @@ patches:
       value: cp.icr.io/cp/ibm-mqadvanced-server-integration:9.2.3.0-r1
     - op: replace
       path: /metadata/name
-      value: qmdev01
-
-
+      value: qmprd01
