@@ -1,7 +1,7 @@
 bases:
 - ../../base
 patchesStrategicMerge:
-- qm.yaml
+- ./qm.yaml
 
 patches:
 - target:
