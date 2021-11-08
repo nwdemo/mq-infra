@@ -24,6 +24,11 @@ spec:
       requests:
         cpu: 500m
     name: QM2
+    mqsc:
+      - configMap:
+          items:
+            - config.mqsc
+          name: mqsc-configmap
     storage:
       queueManager:
         type: ephemeral
