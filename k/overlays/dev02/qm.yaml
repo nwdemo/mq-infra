@@ -4,4 +4,4 @@ metadata:
   name: quickstart-cp4i
 spec:
   queueManager:
-    name: DQM01
+    name: DQM02

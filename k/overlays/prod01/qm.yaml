@@ -7,3 +7,5 @@ spec:
     accept: true
     license: L-RJON-BZFQU2
     use: Production
+  queueManager:
+    name: PQM01
