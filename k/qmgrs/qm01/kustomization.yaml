@@ -1,3 +1,9 @@
 resources:
 - qm.yaml
 - mqsc.yaml
+
+#configMapGenerator:
+#- name: mqsc.config
+#  behavior: create
+#  files:
+#  - config.mqsc

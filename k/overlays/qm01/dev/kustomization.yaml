@@ -3,6 +3,7 @@ bases:
 
 patchesStrategicMerge:
 - ./qm.yaml
+- ./mqsc.yaml
 
 patches:
 - target:
@@ -15,5 +16,9 @@ patches:
     - op: replace
       path: /metadata/name
       value: qmdev01
-
-
+      
+#configMapGenerator:
+#- name: mqsc.config
+#  behavior: merge
+#  files:
+#  - alt.mqsc

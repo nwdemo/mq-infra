@@ -28,6 +28,7 @@ spec:
       - configMap:
           items:
             - config.mqsc
+            - extra
           name: mqsc-configmap
     storage:
       queueManager:
