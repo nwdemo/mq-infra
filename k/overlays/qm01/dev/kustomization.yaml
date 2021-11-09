@@ -4,7 +4,7 @@ bases:
 patchesStrategicMerge:
 - ./qm.yaml
 - ./mqsc.yaml
-
+# Alternative mechanism for patching
 patches:
 - target:
     group: mq.ibm.com
