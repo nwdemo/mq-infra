@@ -1,0 +1,11 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: quickstart-cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-BZFQU2
+    use: Production
+  queueManager:
+    name: PQM01

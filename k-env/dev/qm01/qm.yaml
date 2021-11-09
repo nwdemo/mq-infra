@@ -1,0 +1,14 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: quickstart-cp4i
+spec:
+  queueManager:
+    name: DQM01
+template:
+    pod:
+      containers:
+        - env:
+            - name: DQM01
+              value: 'yes'
+          name: qmgr
